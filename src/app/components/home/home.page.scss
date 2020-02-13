@@ -1,0 +1,138 @@
+.greenHome {
+    color: white;
+    background: #00b388;
+    width: 100%;
+    min-height: 4em;
+    text-align: center;
+}
+
+.header {
+    min-height: 4em;
+    background: #00b388;
+}
+
+.c20 {
+    width: 20%;
+    background-color: yellow;
+}
+
+.c80 {
+    width: 80%;
+    background-color: indigo;
+    ;
+}
+
+.Space {
+    margin-top: 70px;
+}
+
+img {
+    border-radius: 100%;
+}
+
+.text {
+    text-align: left;
+}
+
+.distance {
+    height: 150px;
+}
+
+#goBack {
+    float: left;
+    color: white;
+}
+
+.picIcon {
+    background: #00b388;
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+}
+
+.picIcon>img {
+    padding: 20px;
+}
+
+.textDiv {
+    padding: 5px 10px;
+    width: 70%;
+    margin-top: 3%;
+}
+
+.description {
+    font-size: 19px;
+    color: #687089;
+}
+
+.bTitle {
+    color: #1b2031;
+    font-size: 19px;
+    font-weight: 500;
+}
+.h5-margin{
+    margin-top: 15px;
+}
+
+.hydrated:focus {
+    outline: none;
+}
+
+/* iPhone X and Xs Max */
+
+@media only screen and (min-device-width: 375px) and (min-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    .header {
+        height: 110px;
+    }
+    .greenHome {
+        height: 60px;
+    }
+    .profileIcon {
+        height: 75px;
+    }
+}
+
+
+/* iPhone XR */
+
+@media only screen and (min-device-width: 414px) and (min-device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+    .header {
+        height: 110px;
+    }
+    .greenHome {
+        height: 60px;
+    }
+    .profileIcon {
+        height: 75px;
+    }
+}
+
+// Iphone 8 and 8 PLUS
+@media only screen 
+and (device-width : 375px) 
+and (device-height : 667px) 
+and (-webkit-device-pixel-ratio : 2) { 
+    .header{
+        height: 80px;
+    }
+    .greenHome {
+        height: 60px;
+    }
+    .profileIcon{
+        height: 75px;
+    }
+}
+@media only screen 
+and (device-width : 414px) 
+and (device-height : 736px) 
+and (-webkit-device-pixel-ratio : 3) { 
+    .header{
+        height: 80px;
+    }
+    .greenHome {
+        height: 60px;
+    }
+    .profileIcon{
+        height: 75px;
+    }
+}

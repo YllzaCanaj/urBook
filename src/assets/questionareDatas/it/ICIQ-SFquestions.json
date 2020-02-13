@@ -1,0 +1,103 @@
+{
+    "questions": [
+        {
+            "questionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+            "answers": [
+                {
+                    "answer": "Mai",
+                    "selected": false
+                },
+                {
+                    "answer": "Una volta la settimana o meno",
+                    "selected": false
+                },
+                {
+                    "answer": "Due o tre volte la settimana",
+                    "selected": false
+                },
+                {
+                    "answer": "Circa una volta al giorno",
+                    "selected": false
+                },
+                {
+                    "answer": "Più volte al giorno",
+                    "selected": false
+                },
+                {
+                    "answer": "Continuamente",
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "questionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+            "answers": [
+                {
+                    "answer": "Per niente",
+                    "selected": false
+                },
+                {
+                    "answer": "Una piccola quantità",
+                    "selected": false
+                },
+                {
+                    "answer": "Una discreta quantità",
+                    "selected": false
+                },
+                {
+                    "answer": "una notevole quantità",
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "questionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+            "answers": [
+                {
+                    "answer": "0",
+                    "selected": false
+                },
+                {
+                    "answer": "1",
+                    "selected": false
+                },
+                {
+                    "answer": "2",
+                    "selected": false
+                },
+                {
+                    "answer": "3",
+                    "selected": false
+                },
+                {
+                    "answer": "4",
+                    "selected": false
+                },
+                {
+                    "answer": "5",
+                    "selected": false
+                },
+                {
+                    "answer": "6",
+                    "selected": false
+                },
+                {
+                    "answer": "7",
+                    "selected": false
+                },
+                {
+                    "answer": "8",
+                    "selected": false
+                },
+                {
+                    "answer": "9",
+                    "selected": false
+                },
+                {
+                    "answer": "10",
+                    "selected": false
+                }
+            ]
+        }
+    ]
+}

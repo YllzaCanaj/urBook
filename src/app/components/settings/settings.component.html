@@ -1,0 +1,67 @@
+<ion-header class="header">
+    <ion-toolbar>
+        <ion-title [routerLink]="['/home']" class=" greenHome">{{ translate.instant('settings')}}
+            <ion-back-button style="height: 70%;" algin="right" defaultHref="/home" id="goBack"></ion-back-button>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list style="margin-bottom: -6px;">
+        <ion-radio-group (ionChange)="onChangeHandler($event)">
+            <ion-row>
+                <ion-col size="12">
+                    <ion-item>
+                        <ion-label>{{ translate.instant('italian')}}</ion-label>
+                        <ion-radio value="it" [checked]="this.lang==='it'"></ion-radio>
+                    </ion-item>
+                </ion-col>
+
+                <ion-col size="12">
+                    <ion-item>
+                        <ion-label>{{ translate.instant('english')}}</ion-label>
+                        <ion-radio value="en" [checked]="this.lang==='en'"></ion-radio>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+        </ion-radio-group>
+    </ion-list>
+    <ion-card-content style="height: 4em; padding: 0;background: #efefef;">
+        <ion-label style="color: #687089;padding: 20px;display: block;"></ion-label>
+        <ion-list>
+            <ion-card-content>
+                <ion-row>
+                    <ion-col size="7">
+                        <h5> <b class="bTitle">{{ translate.instant('intructions')}} </b></h5>
+                    </ion-col>
+                    <ion-col size="5">
+                        <button [routerLink]="['/istructions']" class="mButton">{{ translate.instant('more')}}</button>
+                    </ion-col>
+                </ion-row>
+            </ion-card-content>
+            <hr>
+            <ion-card-content>
+                <ion-row>
+                    <ion-col size="7">
+                        <h5> <b class="bTitle">{{ translate.instant('faq')}} </b></h5>
+                    </ion-col>
+                    <ion-col size="5">
+                        <button [routerLink]="['/faq']" class="mButton">{{ translate.instant('more')}}</button>
+                    </ion-col>
+                </ion-row>
+            </ion-card-content>
+            <hr>
+            <ion-card-content>
+                <ion-row>
+                    <ion-col size="7">
+                        <h5> <b class="bTitle">{{ translate.instant('disclosures')}}</b></h5>
+                    </ion-col>
+                    <ion-col size="5">
+                        <button [routerLink]="['/disclosure']" class="mButton">{{ translate.instant('more')}}</button>
+                    </ion-col>
+                </ion-row>
+            </ion-card-content>
+            <hr>
+        </ion-list>
+    </ion-card-content>
+</ion-content>

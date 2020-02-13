@@ -1,0 +1,65 @@
+<!-- <ion-card> -->
+<ion-header class="header">
+    <ion-toolbar>
+        <ion-title [routerLink]="['/home']" class="greenHome">{{ translate.instant('selfEvaluation')}}
+            <ion-back-button algin="right" defaultHref="/home" id="goBack"></ion-back-button>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<!-- </ion-card> -->
+
+<ion-content>
+    <ion-card-content style="height: 4em; padding: 0;background: #efefef;">
+        <ion-label style="color: #687089;padding: 20px;display: block;"></ion-label>
+        <ion-list>
+            <ion-card-content>
+                <ion-row>
+                    <ion-col size="7" class="text">
+                        <h5> <b class="bTitle">{{ translate.instant('iciq-sf')}}</b></h5>
+                        <p class="description"></p>
+                    </ion-col>
+                    <ion-col size="5" class="ion-col">
+                        <button (click)="goToQuestionnaire('/iciq-sf')" class="mButton">{{ translate.instant('more')}}</button>
+                    </ion-col>
+                </ion-row>
+            </ion-card-content>
+            <hr>
+            <ion-card-content>
+                <ion-row>
+                    <ion-col size="7" class="text">
+                        <h5> <b class="bTitle">{{ translate.instant('ipss')}} </b></h5>
+                        <p class="description"></p>
+                    </ion-col>
+                    <ion-col size="5" class="ion-col">
+                        <button (click)="goToQuestionnaire('/ipss')" class="mButton" disabled>{{ translate.instant('more')}}</button>
+                    </ion-col>
+                </ion-row>
+            </ion-card-content>
+            <hr>
+            <ion-card-content>
+                <ion-row>
+                    <ion-col size="7" class="text">
+                        <h5> <b class="bTitle">{{ translate.instant('oab')}}</b></h5>
+                        <p class="description"></p>
+                    </ion-col>
+                    <ion-col size="5" class="ion-col">
+                        <button (click)="goToQuestionnaire('/oab')" class="mButton" disabled>{{ translate.instant('more')}}</button>
+                    </ion-col>
+                </ion-row>
+            </ion-card-content>
+            <hr>
+            <ion-card-content>
+                <ion-row>
+                    <ion-col size="7" class="text">
+                        <h5> <b class="bTitle">{{ translate.instant('litwin')}}</b></h5>
+                        <p class="description"></p>
+                    </ion-col>
+                    <ion-col size="5" class="ion-col">
+                        <button (click)="goToQuestionnaire('/litwin')" class="mButton" disabled>{{ translate.instant('more')}}</button>
+                    </ion-col>
+                </ion-row>
+            </ion-card-content>
+            <hr>
+        </ion-list>
+    </ion-card-content>
+</ion-content>

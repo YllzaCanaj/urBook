@@ -1,0 +1,8 @@
+{
+  "name": "ubook",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

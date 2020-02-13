@@ -1,0 +1,107 @@
+ion-slide {
+    align-items: flex-start;
+    display: inline;
+}
+ion-item {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    // background-color: map-get($colors, primary);
+}
+flash-card {
+    color: #000;
+    img {
+        width: 70%;
+        height: auto;
+   }
+}
+.start-slide {
+    justify-content: center;
+    align-items: center;
+    button {
+        font-size: 1.3em;
+        font-weight: bold;
+   }
+}
+ion-button{
+    background: #00b388;
+    --ion-color-base: #00b388 !important;
+}
+.greenHome {
+    color: white;
+    background: #00b388 !important;
+    width: 100%;
+    min-height: 4em;
+    text-align: center;
+    padding: 10px;
+}
+.header{
+    min-height: 4em;
+    background: #00b388;
+}
+.mButton {
+    color: white;
+    background: #00b388;
+    border-radius: 25px;
+    width: 115px;
+}
+.back-button-has-icon-only.sc-ion-back-button-md-h{
+    height: 28px;
+}
+/* iPhone X and Xs Max */
+@media only screen and (min-device-width: 375px) and (min-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    .header{
+        height: 110px;
+   }
+    .greenHome {
+        height: 60px;
+   }
+    .profileIcon{
+        height: 75px;
+   }
+}
+/* iPhone XR */
+@media only screen and (min-device-width: 414px) and (min-device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+    .header{
+        height: 110px;
+   }
+    .greenHome {
+        height: 60px;
+   }
+    .profileIcon{
+        height: 75px;
+   }
+}
+.hydrated:focus, .mButton:focus{
+    outline: none;
+}
+.sc-ion-back-button-ios-h {
+    --color-focused: white;
+    --color-hover: white;
+    --color: white;
+}
+.item.sc-ion-label-ios-h, .item .sc-ion-label-ios-h{
+    white-space: unset;
+    font-size: 17px;
+}
+@media only screen and (device-width : 375px) and (device-height : 667px) and (-webkit-device-pixel-ratio : 2) {
+    .header{
+        height: 80px;
+   }
+    .greenHome {
+        height: 60px;
+   }
+    .profileIcon{
+        height: 75px;
+   }
+}
+@media only screen and (device-width : 414px) and (device-height : 736px) and (-webkit-device-pixel-ratio : 3) {
+    .header{
+        height: 80px;
+   }
+    .greenHome {
+        height: 60px;
+   }
+    .profileIcon{
+        height: 75px;
+   }
+}

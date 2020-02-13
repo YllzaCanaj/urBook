@@ -1,0 +1,140 @@
+.greenHome {
+    color: white;
+    background: #00b388;
+    width: 100%;
+    min-height: 4em;
+    text-align: center;
+    padding: 10px;
+}
+.header{
+    min-height: 4em;
+    background: #00b388;
+}
+.saveBtn {
+    background: #20c997;
+    color: cornsilk;
+    border-radius: 10px;
+}
+#goBack {
+    float: left;
+    color: cornsilk;
+}
+.circle {
+    border: 2px solid #20c997;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 20px;
+    position: absolute;
+    transition: border-color 300ms;
+    width: 20px;
+}
+.entry-label {
+    cursor: pointer;
+    margin-top: -3px;
+    padding-left: 40px;
+    user-select: none;
+    -moz-user-select: none;
+}
+.error-message {
+    color: var(--ion-color-danger);
+}
+.green {
+    background-color: brown;
+}
+.savebtn {
+    color: cornsilk;
+    background: #20c997;
+    width: 100%;
+    height: 45px;
+}
+.messageclass {
+    --background: #FFDB22;
+    --color: #FF3F22;
+    --border-style: solid;
+    --border-width: 5px;
+    --border-color: #FF3F22;
+}
+.borderGrey{
+    --border-color: transparent;
+    border: 1px solid #c8c7cc;
+    border-radius: 10px;
+}
+.item-has-focus{
+    border: 1px solid #00b388;
+    border-radius: 10px;
+}
+.entry-label{
+    padding-left: 35px;
+    margin-top: 7px;
+}
+.circle{
+    width: 25px;
+    height: 25px;
+}
+ion-datetime{
+    padding-left: 0px;
+    -webkit-padding-start: 0px;
+}
+.row-margin{
+    margin-top: 10px;
+}
+.labelG{
+    margin-bottom: 0;
+    margin-top: -3px;
+    margin-left: -5px;
+}
+.labelDate{
+    margin-left: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 12px;
+}
+/* iPhone X and Xs Max */
+@media only screen and (min-device-width: 375px) and (min-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    .header{
+        height: 110px;
+   }
+    .greenHome {
+        height: 60px;
+   }
+    .profileIcon{
+        height: 75px;
+   }
+}
+/* iPhone XR */
+@media only screen and (min-device-width: 414px) and (min-device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+    .header{
+        height: 110px;
+   }
+    .greenHome {
+        height: 60px;
+   }
+    .profileIcon{
+        height: 75px;
+   }
+}
+.hydrated:focus{
+    outline: none;
+}
+@media only screen and (device-width : 375px) and (device-height : 667px) and (-webkit-device-pixel-ratio : 2) {
+    .header{
+        height: 80px;
+   }
+    .greenHome {
+        height: 60px;
+   }
+    .profileIcon{
+        height: 75px;
+   }
+}
+@media only screen and (device-width : 414px) and (device-height : 736px) and (-webkit-device-pixel-ratio : 3) {
+    .header{
+        height: 80px;
+   }
+    .greenHome {
+        height: 60px;
+   }
+    .profileIcon{
+        height: 75px;
+   }
+}

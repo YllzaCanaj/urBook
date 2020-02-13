@@ -1,0 +1,116 @@
+.greenHome {
+    color: white;
+    background: #00b388;
+    width: 100%;
+    min-height: 4em;
+    text-align: center;
+    padding: 10px;
+}
+
+.header{
+    min-height: 4em;
+    background: #00b388;
+}
+
+.mButton {
+    color: white;
+    background: #00b388;
+    border-radius: 25px;
+    width: 130px;
+    margin-top: 0px;
+    font-size: 14px;
+}
+
+.btn {
+    width: 335px;
+    color: white;
+    background: #00b388;
+    border-radius: 50%;
+}
+
+#goBack {
+    float: left;
+    color: white;
+}
+hr{
+    margin: 0;
+}
+.description{
+    font-size: 19px;
+    color: #687089;
+}
+
+.bTitle{
+    color: #1b2031;
+    font-size: 19px;
+    font-weight: 500;
+}
+button{
+    padding: 3px;
+    color: white;
+    margin-top: 10px;
+}
+    /* iPhone X and Xs Max */
+    @media only screen 
+    and (min-device-width: 375px) 
+    and (min-device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3)
+    and (orientation: portrait) { 
+    .header{
+        height: 110px;
+    }
+    .greenHome {
+        height: 60px;
+    }
+    .profileIcon{
+        height: 75px;
+    }
+    }
+    
+    /* iPhone XR */
+    @media only screen 
+    and (min-device-width: 414px) 
+    and (min-device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 2) 
+    and (orientation: portrait) { 
+    .header{
+        height: 110px;
+    }
+    .greenHome {
+        height: 60px;
+    }
+    .profileIcon{
+        height: 75px;
+    }
+    }
+    .hydrated:focus, .mButton:focus{
+    outline: none;
+    }
+    @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2) { 
+        .header{
+            height: 80px;
+        }
+        .greenHome {
+            height: 60px;
+        }
+        .profileIcon{
+            height: 75px;
+        }
+    }
+    @media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+        .header{
+            height: 80px;
+        }
+        .greenHome {
+            height: 60px;
+        }
+        .profileIcon{
+            height: 75px;
+        }
+    }

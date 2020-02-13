@@ -1,0 +1,111 @@
+<ion-header class="header">
+    <ion-toolbar>
+        <ion-title [routerLink]="['/home']" class=" greenHome">{{ translate.instant('profile')}}
+            <ion-back-button style="height: 70%;" algin="right" defaultHref="/home" id="goBack"></ion-back-button>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card-content>
+        <ion-list>
+            <form [formGroup]="form" (ngSubmit)="save()">
+                <ion-row>
+                    <ion-col size="3">
+                        <input id="male" type="radio" class="circle" active value="1" name="gender" formControlName="gender">
+                        <label for="male" class="labelG">
+                            <div class="entry-label">{{ translate.instant('male')}}</div>
+                        </label>
+                    </ion-col>
+                    <ion-col size="6">
+                        <input id="female" type="radio" class="circle" value="0" name="gender" formControlName="gender">
+                        <label for="female" class="labelG">
+                            <div class="entry-label">{{ translate.instant('female')}}</div>
+                        </label>
+                    </ion-col>
+                </ion-row>
+
+                <ion-row class="row-margin">
+                    <ion-col size="6">
+                        <ion-item class="borderGrey">
+                            <ion-input type="text" placeholder="{{ translate.instant('firstName')}}" formControlName="firstName">
+                            </ion-input>
+                        </ion-item>
+                        <div *ngFor="let error of errormessage.firstName">
+                            <ng-container *ngIf="firstName.hasError(error.type) && (firstName.dirty || firstName.touched)">
+                                <small class="error-message">{{error.mesage}}</small>
+                            </ng-container>
+                        </div>
+                    </ion-col>
+                    <br>
+                    <ion-col size="6">
+                        <ion-item class="borderGrey">
+                            <ion-input type="text" placeholder="{{ translate.instant('lastName')}}" formControlName="lastName">
+                            </ion-input>
+                        </ion-item>
+                        <div *ngFor="let error of errormessage.lastName">
+                            <ng-container *ngIf="lastName.hasError(error.type) && (lastName.dirty || lastName.touched)">
+                                <small class="error-message">{{error.mesage}}</small>
+                            </ng-container>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row style="margin-top: 10px;margin-left: -10px;">
+                    <label class="labelDate">{{ translate.instant('birthDatelabel')}}</label>
+                    <ion-col size="12">
+                        <ion-item>
+                            <ion-datetime (ionChange)="Getage()" #birthDatePicker displayFormat="{{displayFormat}}" placeholder="{{ translate.instant('birthDay')}}" doneText="{{ translate.instant('doneText')}}" cancelText="{{ translate.instant('cancelText')}}" formControlName="birthDate" style="font-size: 15px;">
+                            </ion-datetime>
+                        </ion-item>
+                        <div *ngFor="let error of errormessage.birthDate">
+                            <ng-container *ngIf="birthDate.hasError(error.type) && (birthDate.dirty || birthDate.touched)">
+                                <small class="error-message">{{error.mesage}}</small>
+                            </ng-container>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <br>
+                <ion-row>
+                    <ion-col size="6">
+                        <ion-item class="borderGrey">
+                            <ion-input type="number" placeholder="{{ translate.instant('height')}}" formControlName="height">
+                            </ion-input>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col size="6">
+                        <ion-item class="borderGrey">
+                            <ion-input (ionChange)="changedBMI()" type="number" placeholder="{{ translate.instant('weight')}}" formControlName="weight">
+                            </ion-input>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>
+                <br>
+                <ion-row>
+                    <ion-col size="6">
+                        <ion-item class="borderGrey">
+                            <ion-input type="text" formControlName="age">
+                            </ion-input>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col size="6">
+                        <ion-item class="borderGrey">
+                            <ion-input type="number" placeholder="{{ translate.instant('bmi')}}" formControlName="bmi">
+                            </ion-input>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>
+                <br>
+                <ion-card-content class="borderGrey">
+                    <ion-textarea type="text" placeholder="{{ translate.instant('medicalTherapy')}}" formControlName="medicalTherapy">
+                    </ion-textarea>
+                </ion-card-content>
+                <ion-footer>
+                    <ion-toolbar>
+                        <ion-button type="submit" [disabled]="!form.valid" expand="full" style="-webkit-appearance: none;color: white;background: #00b388; width: 100%; min-height: 4em;font-size: 17px;font-weight: 500;margin-top: 20px;">
+                            {{ translate.instant('submit')}}</ion-button>
+                    </ion-toolbar>
+                </ion-footer>
+            </form>
+        </ion-list>
+    </ion-card-content>
+</ion-content>

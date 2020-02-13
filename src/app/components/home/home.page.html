@@ -1,0 +1,51 @@
+<ion-header class="header">
+    <ion-toolbar>
+        <ion-title class="greenHome">
+            {{ translate.instant('home')}}
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card-content>
+        <ion-grid [routerLink]="['/profile']">
+            <ion-row>
+                <div size="2" class="picIcon">
+                    <img class="greenHome profileIcon" src="https://gal.proto.io/generated/ef43d2a707f99533836aa6f607aec01e_ffffff.svg">
+                </div>
+                <div class="textDiv">
+                    <h5 class="h5-margin"> <b class="bTitle">{{ translate.instant('profile')}} </b></h5>
+                    <p class="description"></p>
+                </div>
+            </ion-row>
+        </ion-grid>
+    </ion-card-content>
+
+    <ion-card-content>
+        <ion-grid [routerLink]="['/selfEvaluation']">
+            <ion-row>
+                <div size="2" class="picIcon">
+                    <img src="https://gal.proto.io/generated/7fa477de9c6383144b3df4b4638e4080_ffffff.svg">
+                </div>
+                <div class="textDiv">
+                    <h5 style="margin-top: 5px;"> <b class="bTitle">{{ translate.instant('selfEvaluation')}}</b></h5>
+                    <p class="description"></p>
+                </div>
+            </ion-row>
+        </ion-grid>
+    </ion-card-content>
+
+    <ion-card-content>
+        <ion-grid [routerLink]="['/settings']">
+            <ion-row>
+                <div size="2" class="picIcon">
+                    <img src="https://gal.proto.io/generated/3afba0b868d02a906a2626073191dae4_ffffff.svg">
+                </div>
+                <div class="text textDiv">
+                    <h5 class="h5-margin"> <b class="bTitle">{{ translate.instant('settings')}} </b></h5>
+                    <p class="description"></p>
+                </div>
+            </ion-row>
+        </ion-grid>
+    </ion-card-content>
+</ion-content>

@@ -1,0 +1,44 @@
+<ion-header class="header">
+    <ion-toolbar>
+        <ion-title class="greenHome">
+            <ion-back-button style="height: 70%; float: left;" defaultHref="/selfEvaluation" id="goBack">
+            </ion-back-button>
+            {{ translate.instant('questionList')}}
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-slides #IonSlides (ionSlideReachEnd)="slidesReachedEnd($event)" (ionSlideReachStart)="slidesReachedStart($event)">
+
+        <ion-slide *ngFor="let question of questions; let i = index;">
+
+            <h4 style="margin-top: 40px;">{{ translate.instant('question')}} {{i+1}} / {{questions.length}}</h4>
+
+            <h4>{{question.questionText}}</h4>
+
+            <ion-list no-lines radio-group>
+                <ion-radio-group>
+                    <ion-item *ngFor="let answer of question.answers; let i = index;">
+
+                        <ion-label>{{i+1}}. {{answer.answer}}</ion-label>
+                        <ion-radio (click)="selectAnswer(answer)" [checked]="answer.selected"></ion-radio>
+
+                    </ion-item>
+                </ion-radio-group>
+
+            </ion-list>
+
+            <ion-button color="primary" *ngIf="!reachedStart" (click)="previousSlide()">{{ translate.instant('previous')}}</ion-button>
+            <ion-button color="primary" *ngIf="!reachedEnd" [disabled]="!hasAnswered" (click)="nextSlide()">{{ translate.instant('next')}}
+            </ion-button>
+            <ion-button color="primary" *ngIf="reachedEnd" [disabled]="!hasAnswered" (click)="downloadPDF()">{{ translate.instant('finish')}}
+            </ion-button>
+        </ion-slide>
+
+    </ion-slides>
+
+
+
+</ion-content>
